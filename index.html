@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task1 C3 Experiential Learning Private Limited</title>	
+	<!-- icons -->
+	<script src="all.min.js"></script>
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
+  <style media="screen">
+  .carousel-cell {
+    width: 100%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+  </style>
+<body>
+
+	<!--Logo-->
+
+	<header>
+		<div class="top">
+			<div class="container">
+				
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+					<li><a href="#"><i class="fas fa-phone-alt"></i>+413512937024</a></li>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<nav>
+			<div class="container">
+				<a href="#" class="logo">
+					<img src="logo1.png">
+				</a>
+				
+				<input type="checkbox" id="menu">
+				<label for="menu"><i class="fas fa-bars"></i></label>
+				<ul class="menuList">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+<!--Photo oneside containt oneside-->
+
+	<div class="container">
+		<div class="description-conatainer">
+			<img src="lays.jpg" alt="" class="img-responsive floating-image right">
+			<h2 class="content">Here is our Beautiful website</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus eveniet, nulla atque dolores totam voluptate delectus saepe nam dolorem deserunt consequatur ipsum facilis! Ipsum quo ratione voluptatibus nemo Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat debitis eos quidem in, dolores recusandae dolore aliquam cumque suscipit doloribus laborum quasi? At voluptas similique nemo laboriosam aut dolor eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus expedita veritatis assumenda ratione praesentium. Excepturi quidem iste optio, veritatis odio molestiae. Blanditiis minus laborum tenetur! Vero aperiam mollitia quibusdam.</p>
+
+			<img src="lays.jpg" alt="" class="img-responsive floating-image left">
+			<h2 class="content1">Here is our Beautiful website</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus eveniet, nulla atque dolores totam voluptate delectus saepe nam dolorem deserunt consequatur ipsum facilis! Ipsum quo ratione voluptatibus nemo Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat debitis eos quidem in, dolores recusandae dolore aliquam cumque suscipit doloribus laborum quasi? At voluptas similique nemo laboriosam aut dolor eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem ullam ipsam doloribus voluptates natus doloremque repudiandae maiores ratione ex, repellat assumenda rerum, possimus placeat quaerat et dolores ipsa vel.</p>
+		</div>
+	</div>
+
+<!--Carousel-->
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+      <div class="carousel-cell">
+        <img class="w3-image" src="photo.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="photo.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="photo.png">
+      </div>
+    </div>
+
+<!-- took help=https://flickity.metafizzy.co/-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+
+<!--About Section-->
+
+	<div class="about-section">
+		<div class="inner-container">
+			<h1>About Me</h1>
+			<p class="text2">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, debitis dolore repudiandae asperiores autem, adipisci corrupti eius reiciendis iste voluptatibus soluta libero laudantium deserunt possimus ullam veritatis delectus doloribus qui?
+			</p>
+			<div class="skills">
+				<span>Web Devloper</span>
+				<span>Programmer</span>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--Contact form-->
+
+
+	<div class="contact-box">
+		
+		<form>
+			<h2>Contact Form</h2>
+		<input type="text" class="input-field" placeholder="Name">
+		<input type="email" class="input-field" placeholder="Email">
+		<input type="number" class="input-field" placeholder="Phone No">
+		<textarea type="text" class="input-field textarea-field" placeholder="Type your Msg"></textarea>
+		<button type="button" class="bt">Send</button>	
+		</form>
+	</div>
+
+
+</body>
+</html>
