@@ -1,0 +1,305 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+}
+ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	transition: .3s;
+}
+header{
+	position: relative;
+	width: 100%;
+}
+.top{
+	background: #ef3624;
+	padding: 20px 0;
+}
+.container{
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top ul li{
+	margin-right: 15px;
+}
+.top ul li a{
+	color: #fff;
+}
+.top ul li a:hover{
+	color: #222;
+}
+nav{
+	background: #333;
+	position: relative;
+	padding: 15px 0;
+	z-index: 10;
+}
+.logo{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: -60px;
+	left: 35%;
+}
+nav ul{
+	width: 100%;
+	transition: .3s;
+}
+nav ul li:nth-child(4){
+	margin-left: 250px;
+}
+nav ul li a{
+	color: #ff0;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: #ef3624;
+}
+#menu{
+	display: none;
+}
+label{
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px 0;
+	display: none;
+}
+@media (max-width: 960px){
+	label{
+		display: block;
+	}
+	.container{
+		padding: 0 40px;
+	}
+	.social li:nth-child(1),
+	.social li:nth-child(2){
+		display: none;
+	}
+	.logo{
+		left: 38%;
+		top: -40px;
+	}
+	.logo img{
+		width: 150px;
+	}
+	nav{
+		padding: 0;
+	}
+	nav ul{
+		position: absolute;
+		top: 50px;
+		left: -100%;
+		background: #000;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		height: 100vh;
+	}
+	#menu:checked ~ ul{
+		left: 0;
+	}
+	nav ul li{
+		margin: 0 !important;
+		width: 100%;
+	}
+	nav ul li a{
+		border: 1px solid #ef3624;
+		padding: 15px 0;
+		margin: 10px 0;
+		text-align: center;
+	}
+	nav ul li a:hover{
+		background: #ff0;
+	}
+}
+@media (max-width: 460px){
+	.logo{
+		top: -30px;
+	}
+	.logo img{
+		width: 100px;
+	}
+}
+
+
+
+.description-conatainer{
+	
+	max-width: 800px;
+	margin: 30px auto 20px;
+}
+.description-conatainer .floating-image{
+	max-width: 400px;
+	
+}
+.description-conatainer .floating-image.right
+{
+	margin-top: 70px;
+	float: right;
+	margin-left: 30px ;
+	margin-bottom: 20px;
+}
+.description-conatainer .content{
+	margin-top: 70px;
+}
+
+.description-conatainer .floating-image.left
+{
+	margin-top: 60px;
+	float: left;
+	margin-right: 30px ;
+	margin-bottom: 20px;
+}
+
+.description-conatainer .content1{
+	margin-top: 50px;
+}
+
+#slider
+{
+	overflow: hidden;
+}
+#slider figure
+{
+	position: relative;
+	margin:0;
+	left: 0;
+	animation: 10s slider infinite;	
+}
+.contact-box
+{
+	width: 800px;
+	background-color:#fff;
+	box-shadow: 0 0 20px 0 #999;
+	top: 280%;
+	left: 50%;
+	margin-bottom: 10px;
+	
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.about-section{
+    background: url(pic.jpg) no-repeat left;
+    background-size: 50%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+	margin-top: 30px;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+	margin-top: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+.contact-box
+{
+	width: 00px;
+	background-color:#fff;
+	box-shadow: 0 0 20px 0 #999;
+	
+	left: 0%;
+	margin-top:800px;
+	margin-bottom: 40px;
+	
+	
+
+}
+
+form
+{
+	margin: 35px;
+}
+
+.input-field
+{
+	width: 700px;
+	height: 50px;
+	margin-top:20px;
+	padding-left: 10px;
+	border: 1px solid #777;
+	border-radius: 14px;
+	outline: none;
+}
+
+.textarea-field
+{
+	height: 150px;
+	padding-top: 10px;
+}
+.bt
+{
+	border-radius: 10px;
+	color:rgb(246, 248, 244);
+	margin-top: 18px ;
+	padding: 10px;
+	background-color:#47c35a ;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+
